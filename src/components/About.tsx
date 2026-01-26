@@ -1,3 +1,4 @@
+import { Brain, Heart, BookOpen, User } from 'lucide-react';
 import draJoseane from '@/assets/dra-joseane.png';
 
 const About = () => {
@@ -7,28 +8,48 @@ const About = () => {
     { value: '5★', label: 'Avaliação' },
   ];
 
+  const features = [
+    { icon: Brain, title: 'Neuropsicoterapeuta', description: 'Especialização em neurociência aplicada' },
+    { icon: Heart, title: 'Abordagem Humanizada', description: 'Escuta acolhedora e ética' },
+    { icon: BookOpen, title: 'Atualização Constante', description: 'Técnicas terapêuticas modernas' },
+    { icon: User, title: 'Experiência', description: 'Anos de dedicação à saúde mental' },
+  ];
+
   return (
     <section id="sobre" className="section-padding bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Image */}
+          {/* Image with feature cards */}
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-gold/20 rounded-2xl transform rotate-3" />
-            <img
-              src={draJoseane}
-              alt="Dra. Joseane Souza - Neuropsicoterapeuta"
-              className="relative z-10 rounded-2xl w-full max-w-md mx-auto object-cover shadow-xl"
-            />
+            <div className="relative bg-gradient-to-br from-sage to-teal-light rounded-2xl p-6 pb-24">
+              <img
+                src={draJoseane}
+                alt="Dra. Joseane Souza - Neuropsicoterapeuta"
+                className="relative z-10 rounded-xl w-full max-w-sm mx-auto object-cover"
+              />
+            </div>
+            
+            {/* Feature cards grid */}
+            <div className="absolute bottom-0 left-4 right-4 grid grid-cols-2 gap-3 translate-y-1/2">
+              {features.map((feature, index) => (
+                <div key={index} className="bg-white p-4 rounded-xl shadow-md border border-border">
+                  <feature.icon size={20} className="text-primary mb-2" />
+                  <h4 className="font-semibold text-sm text-foreground">{feature.title}</h4>
+                  <p className="text-xs text-muted-foreground">{feature.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
           
           {/* Content */}
-          <div>
-            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+          <div className="lg:pl-8 mt-24 lg:mt-0">
+            <span className="inline-block px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium mb-4">
               Sobre Mim
             </span>
             
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ajudo você a retomar o controle da sua vida
+              Ajudo você a retomar o{' '}
+              <span className="text-primary">controle</span> da sua vida
             </h2>
             
             <div className="space-y-4 text-muted-foreground">
