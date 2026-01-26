@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -15,23 +15,30 @@ const Header = () => {
   }, []);
 
   const navLinks = [
+    { href: '#', label: 'Início' },
     { href: '#sobre', label: 'Sobre' },
     { href: '#especialidades', label: 'Especialidades' },
     { href: '#como-funciona', label: 'Como Funciona' },
     { href: '#depoimentos', label: 'Depoimentos' },
     { href: '#faq', label: 'FAQ' },
-    { href: '#contato', label: 'Contato' },
   ];
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-effect shadow-lg py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white shadow-lg py-3' : 'bg-white py-4'
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="font-serif text-xl font-semibold text-primary">
-          Dra. Joseane Souza
+        {/* Logo with Avatar */}
+        <a href="#" className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+            <span className="text-primary-foreground font-serif font-bold text-lg">J</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="font-serif text-lg font-semibold text-foreground">Dra. Joseane Souza</span>
+            <span className="text-xs text-primary">Neuropsicoterapeuta</span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}
@@ -45,12 +52,13 @@ const Header = () => {
               {link.label}
             </a>
           ))}
-          <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+          <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
             <a
               href="https://wa.me/5566999340517?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
               target="_blank"
               rel="noopener noreferrer"
             >
+              <Phone size={16} />
               Agendar Consulta
             </a>
           </Button>
@@ -68,7 +76,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <nav className="lg:hidden glass-effect mt-2 mx-4 rounded-lg p-4 shadow-lg">
+        <nav className="lg:hidden bg-white mt-2 mx-4 rounded-lg p-4 shadow-lg border border-border">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
@@ -80,12 +88,13 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-2">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-2 gap-2">
               <a
                 href="https://wa.me/5566999340517?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <Phone size={16} />
                 Agendar Consulta
               </a>
             </Button>
