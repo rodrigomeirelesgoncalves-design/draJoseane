@@ -21,6 +21,7 @@ const Header = () => {
     { href: '#como-funciona', label: 'Como Funciona' },
     { href: '#depoimentos', label: 'Depoimentos' },
     { href: '#faq', label: 'FAQ' },
+    { href: '/blog', label: 'Blog' },
   ];
 
   return (
