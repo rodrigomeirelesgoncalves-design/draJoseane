@@ -21,7 +21,7 @@ const Footer = () => {
                 <span className="text-primary-foreground font-serif font-bold text-lg">J</span>
               </div>
               <div>
-                <h3 className="font-serif text-lg font-semibold">Dra. Joseane Souza</h3>
+                <h3 className="font-serif text-lg font-semibold">Joseane Souza</h3>
                 <p className="text-sm text-primary">Neuropsicoterapeuta</p>
               </div>
             </div>
