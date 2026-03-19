@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-background/70">
-              © {new Date().getFullYear()} Dra. Joseane Souza. Todos os direitos reservados.
+              © {new Date().getFullYear()} Joseane Souza. Todos os direitos reservados.
             </p>
             <div className="flex items-center gap-1 text-sm text-background/70">
               <span>Feito com</span>

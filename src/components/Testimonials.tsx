@@ -18,7 +18,7 @@ const Testimonials = () => {
       name: 'Ana L.',
       location: 'Sorriso, MT',
       initial: 'A',
-      text: 'O tratamento com a Dra. Joseane foi transformador. Ela tem uma forma única de trabalhar, respeitando meu tempo e minha história. Gratidão eterna.',
+      text: 'O tratamento com a Joseane foi transformador. Ela tem uma forma única de trabalhar, respeitando meu tempo e minha história. Gratidão eterna.',
     },
   ];
 

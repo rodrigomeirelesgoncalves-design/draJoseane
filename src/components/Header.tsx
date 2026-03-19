@@ -37,7 +37,7 @@ const Header = () => {
             <span className="text-primary-foreground font-serif font-bold text-lg">J</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-serif text-lg font-semibold text-foreground">Dra. Joseane Souza</span>
+            <span className="font-serif text-lg font-semibold text-foreground">Joseane Souza</span>
             <span className="text-xs text-primary">Neuropsicoterapeuta</span>
           </div>
         </a>
