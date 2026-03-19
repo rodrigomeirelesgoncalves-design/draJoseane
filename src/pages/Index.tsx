@@ -8,6 +8,7 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import LocationTags from '@/components/LocationTags';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
       <FAQ />
       <Contact />
       <Footer />
+      <LocationTags />
       <WhatsAppButton />
     </div>
   );

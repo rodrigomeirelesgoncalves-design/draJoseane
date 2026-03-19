@@ -24,7 +24,7 @@ const About = () => {
             <div className="relative bg-gradient-to-br from-sage to-teal-light rounded-2xl p-6 pb-24">
               <img
                 src={draJoseane}
-                alt="Dra. Joseane Souza - Neuropsicoterapeuta"
+                alt="Joseane Souza - Neuropsicoterapeuta"
                 className="relative z-10 rounded-xl w-full max-w-sm mx-auto object-cover"
               />
             </div>

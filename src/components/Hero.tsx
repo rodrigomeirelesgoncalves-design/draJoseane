@@ -56,7 +56,7 @@ const Hero = () => {
               <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
                   src={draJoseane}
-                  alt="Dra. Joseane Souza - Neuropsicoterapeuta especializada em ansiedade e traumas"
+                  alt="Joseane Souza - Neuropsicoterapeuta especializada em ansiedade e traumas"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
