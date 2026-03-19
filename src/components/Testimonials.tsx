@@ -6,7 +6,7 @@ const Testimonials = () => {
       name: 'Maria C.',
       location: 'São Paulo, SP',
       initial: 'M',
-      text: 'A Dra. Joseane mudou minha vida. Depois de anos lutando contra ansiedade, finalmente encontrei paz. O atendimento online é muito prático e a sessão flui naturalmente.',
+      text: 'A Joseane mudou minha vida. Depois de anos lutando contra ansiedade, finalmente encontrei paz. O atendimento online é muito prático e a sessão flui naturalmente.',
     },
     {
       name: 'Pedro R.',
